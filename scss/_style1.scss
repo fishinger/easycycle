@@ -1,0 +1,565 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "../fonts/fonts-style.css";
+@import "soc/*.png";
+
+$font-reg: 'proximanova_regular';
+$font-light: 'proximanova_light';
+$font-bold: 'proximanova_bold';
+$font-sbold: 'proximanova_sbold';
+$color-yllow: #FFD200;
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: $font-reg;
+	position: relative;
+	padding-top: 90px;
+}
+h2{
+	font-family: $font-light;
+	font-size: 90px;
+	line-height: 80px;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: #A8A8A8;
+}
+.container{
+	width: 942px;
+	margin: 0 auto;
+}
+.clearfix:before,
+.clearfix:after{
+	display: table;
+  	content: " ";
+}
+.clearfix:after{
+	clear: both;
+}
+header{
+	width: 100%;
+	height: 90px;
+	background-color: #A8A8A8;
+	line-height: 90px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 950;
+	button{
+		padding: 0 22px;
+		height: 40px;
+		color: #000;
+		font-family: $font-reg;
+		font-size: 16px;
+		font-weight: 400;
+		text-transform: uppercase;
+		background: $color-yllow;
+		float: right;
+		border: none;
+		margin-top: 25px;
+		cursor: pointer;
+		&:focus{
+			outline: 0 none;
+		}
+	}
+	nav{
+		float: left;
+		ul li{
+			margin-right: 18px;
+			float: left;
+			
+			text-transform: uppercase;
+			a{
+				font-family: $font-reg;
+				font-size: 16px;
+				font-weight: 400;
+				color: #FFF;
+				text-decoration: none;
+				padding: 0 4px 11px 4px;
+				transition: all .3s;
+			}
+			&.active a, a:hover{
+				border-bottom: 2px solid $color-yllow;
+				color: #000;
+			}
+		}
+	}
+}
+section.slider{
+	margin: 0 0 238px 0;
+	.slider__main{
+		position: relative;
+		.compani-slog{
+			position: absolute;
+			width: 656px;
+			top: 37px;
+			left: 37px;
+			z-index: 900;
+			h1, h1 span{
+				font-family: $font-light;
+				font-size: 110px;
+				font-weight: 300;
+				text-transform: uppercase;
+				color: #FFFEFE;
+				margin-bottom: 26px;
+				span{
+					color: #FFD200;
+				}
+			}
+			& > span{
+				color: #FFF;
+				display: block;
+				font-family: $font-sbold;
+				font-size: 15px;
+				font-weight: 600;
+				text-transform: uppercase;
+				margin-bottom: 171px;
+			}
+			p{
+				font-family: $font-bold;
+				font-size: 60px;
+				font-weight: 700;
+				text-transform: uppercase;
+				color: #FFF;
+				line-height: 80px;
+				span{
+					color: #FFD200;
+				}
+				.slider-info{
+					color: #A8A8A8;
+				}
+			}
+
+		}
+	}
+}
+section.company{
+	margin-bottom: 104px;
+	.company__about{
+		h2{
+			width: 295px;
+			margin-bottom: 44px;
+		}
+		img{
+			float: left;
+			margin: 0 21px 21px 0;
+		}
+		img:nth-of-type(2n){
+			margin-right: 0;
+		}
+		p{
+			float: left;
+			color: #4C4C4C;
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 26px;
+			width: 450px;
+		}
+	}
+}
+section.direction{
+	margin-bottom: 98px;
+	h2{
+		line-height: 72px;
+		font-size: 72px;
+		text-align: right;
+	}
+	span{
+		font-size: 60px;
+		display: block;
+		text-align: right;
+		margin-bottom: 67px;
+		color: #A8A8A8;
+		font-family: $font-light;
+		text-transform: uppercase;
+	}
+	article{
+		float: left;
+		width: 33%;
+		i{
+			margin: 0 auto 54px auto;
+		}
+		h3{
+			color: #FFD200;
+			font-family: $font-bold;
+			font-size: 30px;
+			font-weight: 600;
+			min-height: 58px;
+			text-transform: uppercase;
+			margin-bottom: 22px;
+			text-align: center;
+		}
+		p{
+			color: #4C4C4C;
+			font-size: 16px;
+			line-height: 26px;
+			font-weight: 400;
+			line-height: 26px;
+			text-align: center;
+			width: 287px;
+		}
+	}
+	article:nth-of-type(1){
+		i{
+			display: block;
+			width: 80px;
+			height: 100px;
+			background: url(../img/velo.png) 0 0 no-repeat;
+		}
+	}
+	article:nth-of-type(2){
+		i{
+			display: block;
+			width: 107px;
+			height: 100px;
+			background: url(../img/pilates.png) 0 0 no-repeat;
+		}
+	}
+	article:nth-of-type(3){
+		i{
+			display: block;
+			width: 81px;
+			height: 100px;
+			background: url(../img/trening.png) 0 0 no-repeat;
+		}
+	}
+}
+section.application{
+	.container{
+		position: relative;
+		z-index: 600;
+	}
+	h2{
+		text-align: right;
+		margin-bottom: 30px;
+	}
+	img{
+		float: left;
+	}
+	img{
+		position: absolute;
+		left: -73px;
+	}
+	.app-right{
+		float: right;
+	}
+	span{
+		font-family: $font-light;
+		font-weight: 300;
+		text-transform: uppercase;
+		color: #FFD200;
+		font-size: 73px;
+		display: block;
+		margin-bottom: 106px;
+	}
+	a{
+		display: block;
+		width: 195px;
+		height: 65px;
+		margin: 0 auto 30px auto;
+	}
+	a:last-child{
+		margin-bottom: 88px;
+	}
+	a.btn-app-store{
+		background: url(../img/app-store.png);
+	}
+	a.btn-app-google{
+		background: url(../img/app-google.png);
+	}
+}
+section.user-contact{
+	background-color: #EBEBEB;
+	padding-bottom: 50px;
+	margin-top: -22px;
+	position: relative;
+	&:before{
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 620px;
+			background: url(../img/user-contact.jpg) 0 0 no-repeat;
+			left: 0px;
+			top: -22px;
+		}
+	.container{
+		position: relative;
+	}
+	.contact-wrap{
+		position: relative;
+		z-index: 500;
+	}
+	h2{
+		color: #FFD200;
+		font-size: 72px;
+		text-align: right;
+		margin-bottom: 27px;
+		line-height: 72px;
+		width: 530px;
+		float: right;
+	}
+	span{
+		font-family: $font-light;
+		font-weight: 300;
+		text-transform: uppercase;
+		color: #A8A8A8;
+		font-size: 28px;
+		text-align: right;
+		line-height: 42px;
+		display: block;
+		margin-bottom: 42px;
+		width: 530px;
+		float: right;
+	}
+	.form-controls{
+		width: 380px;
+		float: right;
+		display: block;
+		input{
+			width: 100%;
+			height: 60px;
+			display: block;
+			margin-bottom: 32px;
+			border: 1px solid #d9d9d9;
+			padding: 0 21px;
+			color: #999;
+			font-size: 18px;
+			font-weight: 400;
+			&.error{
+				border: 1px solid #FF464A;
+			}
+			&.valid{
+				border: 1px solid #84D53C;
+			}
+		}
+		button{
+			color: #323232;
+			font-size: 20px;
+			font-weight: 400;
+			text-transform: uppercase;
+			width: 260px;
+			height: 50px;
+			background: $color-yllow;
+			border: none;
+			cursor: pointer;
+			display: block;
+			margin: 0 auto;
+		}
+	}
+
+}
+section.map{
+	height: 480px;
+	background: url(../img/map-main.jpg) 0 0 no-repeat;
+	.container{
+		position: relative;
+		height: 100%;
+	}
+	.map__contacts{
+		width: 296px;
+		height: 208px;
+		background: #ffd200;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		padding: 26px 32px;
+		h3{
+			font-family: $font-light;
+			opacity: 0.8;
+			color: #FFF;
+			font-size: 48px;
+			font-weight: 300;
+			text-transform: uppercase;
+			text-align: center;
+			margin-bottom: 40px;
+		}
+		.map__email, .map__phone{
+			font-size: 20px;
+			margin-right: 15px;
+			span{
+				padding-left: 17px;
+			}
+		}
+		.map__email{
+			margin-bottom: 31px;
+			i{
+				width: 32px;
+				height: 23px;
+				display: block;
+				background: url(../img/mail.png) 0 0 no-repeat;
+				float: left;
+			}
+		}
+		.map__phone{
+			i{
+				width: 32px;
+				height: 32px;
+				display: block;
+				background: url(../img/phone.png) 0 0 no-repeat;
+				float: left;
+				position: relative;
+				top: -7px;
+			}
+		}
+	}
+}
+$soc-sprite-dimensions: true;
+footer{
+	height: 72px;
+	line-height: 72px;
+	background-color: #262626;
+	.open-popup{
+		display: none;
+	}
+	span.copy{
+		color: #666;
+		font-size: 16px;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+	.social{
+		float: right;
+		margin-top: 26px;
+		@each $item in 'soc-f', 'soc-t', 'soc-i'{
+			a.#{$item}{
+				background: url(../img/soc-s4beca0524d.png);
+				@include soc-sprite(#{$item});
+				float: left;
+				margin-right: 33px;
+			}
+		}
+	}
+}
+.popup-contact{
+	width: 640px;
+	border: 3px solid #FFD200;
+	position: relative;
+	padding: 87px 51px;
+	background: #fff;
+	display: none;
+	&:before{
+		content: '';
+		position: absolute;
+		width: 640px;
+		height: 119px;
+		background: url(../img/popup-shadow.png) 0 0 no-repeat;
+		left: 0;
+		bottom: -119px;
+	}
+	h2{
+		color: #FFD200;
+		font-size: 72px;
+		line-height: 72px;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+	p{
+		font-family: $font-light;
+		font-weight: 300;
+		text-transform: uppercase;
+		color: #A8A8A8;
+		font-size: 28px;
+		line-height: 42px;
+		margin-bottom: 51px;
+		text-align: center;
+	}
+	.form-group{
+		width: 380px;
+		margin: 0 auto;
+		input{
+			width: 100%;
+			height: 60px;
+			border: 1px solid #d9d9d9;
+			margin-bottom: 30px;
+			padding: 0 21px;
+			color: #999;
+			font-size: 18px;
+			font-weight: 400;
+			&.error{
+				border: 1px solid #FF464A;
+			}
+			&.valid{
+				border: 1px solid #84D53C;
+			}
+		}
+		button{
+			width: 260px;
+			height: 50px;
+			background: #ffd200;
+			color: #000;
+			font-size: 20px;
+			font-weight: 400;
+			text-transform: uppercase;
+			cursor: pointer;
+			display: block;
+			margin: 0 auto;
+			border: none;
+		}
+	}
+}
+
+.fancybox-close{
+	position: absolute;
+	display: block;
+	top: 10px;
+	right: 10px;
+	background: url(../img/popup-close.png) 0 0 no-repeat;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+}
+.fancybox-skin{
+	box-shadow: none!important;
+}
+.top-popup{
+	width: 100%;
+	height: 171px;
+	background: #262626;
+	padding: 30px 0 35px 0;
+	position: fixed;
+	top: -171px;
+	left: 0;
+	z-index: 960;
+	p{
+		color: #999;
+		width: 595px;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 27px;
+		margin-bottom: 18px;
+	}
+	.form-controls{
+		input{
+				width: 235px;
+				height: 42px;
+				margin-right: 22px;
+				border: 1px solid #d9d9d9;
+				padding: 0 21px;
+				color: #999;
+				font-size: 18px;
+				font-weight: 400;
+				&.error{
+					border: 2px solid #FF464A;
+					}
+				&.valid{
+					border: 2px solid #84D53C;
+					}
+				}
+		button{
+				color: #000;
+				font-size: 16px;
+				font-weight: 400;
+				text-transform: uppercase;
+				width: 134px;
+				height: 40px;
+				background-color: #FFD200;
+				border: none;
+				cursor: pointer;
+				margin: 0 auto;
+				}
+		}
+}

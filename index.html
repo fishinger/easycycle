@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Easycycle</title>
+	<link rel="stylesheet" href="css/jquery.fancybox.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src='js/jquery-1.9.1.min.js'></script>
+	<script src='js/jquery.bxslider.min.js'></script>
+	<script src='js/jquery.validate.min.js'></script>
+	<script src='js/waypoints.min.js'></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+	<script src="js/jquery.fancybox.pack.js"></script>
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!--[if lt IE 9]>
+	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta3)/IE9.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header class='clearfix'>
+		<div class="container clearfix">
+			<a href="#" class="logo-top">
+				<img src="img/logo-top.png" alt="">
+			</a>
+			<nav class='top-menu'>
+				<ul class='clearfix'>
+					<li class='active'><a href="#about">наша студия</a></li>
+					<li><a href="#direction">направления</a></li>
+					<li><a href="#app">приложение</a></li>
+					<li><a href="#footer">регистрация</a></li>
+				</ul>
+			</nav>
+			<a href="#popup-wrap" id='open-popup' class='openpopup'><button>бронирование уроков</button></a>
+		</div>
+	</header>
+	<div class='header-content clearfix'>
+		<div class="container">
+			<h1>профессиональная<br><span>сеть вело-студий</span></h1>
+		</div>
+	</div>
+	<section class="about" id='about'>
+		<div class="container clearfix">
+			<p>
+				<span>
+					Получать удовольствие от жизни и спорта легко, достаточно посетить сеть уникальных велостудий EasyCycle.
+				</span><br>
+				Их уникальность — в отсутствии клубного членства, наличие личного кабинета клиента, возможность онлайн-резервации и оплаты занятий, а также собственное мобильное приложение. Клиенты студий могут заниматься по индивидуальной программе или пробовать пакеты тренировок, разработанных профессионалами для решения разных фитнес-задач. Всем, кто хочет повысить качество жизни, кто думает о своем здоровье, ценит свое время и хочет быть уверенным в завтрашнем дне, комфортное пребывание в нашей студии мы гарантируем. EasyCycle — это абсолютно новый подход к велотренировкам! Присоединяйтесь - команда EasyCycle
+			</p>
+		</div>
+	</section>
+	<section class="direction" id='direction'>
+		<div class="container">
+			<div class="dir__record">
+				<ul class="content-img">
+					<li class="content-nav-4"><img src="img/outdoor.png" alt=""></li>
+					<li class="content-nav-3"><img src="img/trening.png" alt=""></li>
+					<li class="content-nav-2"><img src="img/pilates.png" alt=""></li>
+					<li class="content-nav-1 active-img"><img src="img/velo.png" alt=""></li>
+				</ul>
+				<a href="#popup-wrap" class='openpopup'>Записаться на урок</a>
+			</div>
+			<div class="dir__right">
+				<nav class='record-tab'>
+					<ul>
+						<li class='active'><a href="#" data-class="nav-1">Велотренировки</a></li>
+						<li><a href="#" data-class="nav-2">Пилатес</a></li>
+						<li><a href="#" data-class="nav-3">Функциональный тренинг</a></li>
+						<li><a href="#" data-class="nav-4">outdoor</a></li>
+					</ul>
+				</nav>
+				<ul class="direction-text">
+					<li class="content-nav-1 active">
+						<p class='record__info'>
+							Занятия в быстром темпе проводит инструктор под заводную музыку. Время заезда — 45–50 и 60–90 минут. Тренировки отличаются друг от друга уровнем сложности и направленностью: у нас есть самые разные программы, от базовых, помогающих освоить специфику техники, до силовых или скоростных тренировок на выносливость и др.
+						</p>
+					</li>
+					<li class="content-nav-2">
+						<p class='record__info'>
+							Это популярная практика самосовершенствования человека на всех уровнях — от тела до сознания. Возможность травм и негативных реакций на тренировках практически сведена к нулю, поэтому питалес — отличное дополнение велотренировок, и посещать занятия можно как до, так и после основных программ.
+						</p>
+					</li>
+					<li class="content-nav-3">
+						<p class='record__info'>
+							Мы предлагаем тренировки для людей любого уровня подготовки, возраста, физиологических особенностей и самых разнообразных фитнес-целей
+						</p>
+					</li>
+					<li class="content-nav-4">
+						<p class='record__info'>
+							Разные виды занятий на открытом воздухе не только укрепляют сердечно-сосудистую систему, развивают выносливость и помогают отработать технику, но и позволяют укрепить здоровье в целом, похудеть и дарят много положительных эмоций! Тренировки проводятся под наблюдением профессионалов.
+						</p>
+					</li>
+				</ul>
+				
+			</div>
+			<section class="dir__app" id='app'>
+				<div class="app__slider">
+					<div class="app__slide1">
+						<div class="slide slide11"></div>
+						<div class="slide slide12"></div>
+						<div class="slide slide13"></div>
+						<div class="slide slide14"></div>
+						<div class="slide slide15"></div>
+						<div class="slide slide16"></div>
+					</div>
+					<div class="app__controls">
+						<a href="#" class='store'></a>
+						<a href="#" class='goog'></a>
+					</div>
+				</div>
+			</section>
+		</div>
+	</section>
+	<footer class='clearfix'>
+		<div class="container">
+			<section class="footer__left" id='footer'>
+				<h3>Оставьте<br>свои данные,</h3>
+				<p>и мы свяжемся с вами</p>
+				<form action="" class='form' id='reg-submit'>
+					<div class="form-wrap">
+						<div class="form-group">
+							<input type="text" placeholder='Ваше имя' id='user-name' name='nameform'>
+						</div>
+						<div class="form-group">
+							<input type="text" placeholder='Ваш E-mail' id='user-email' name='emailform'>
+						</div>
+						<button type='submit'>Отправить</button>
+					</div>
+				</form>
+				<p>
+					или свяжитесь с нами
+					удобным для вас способом
+				</p>
+				<div class="footer__contacts">
+					<a href="mailto:info@easycycle.ru" class='email'><i></i>info@easycycle.ru</a>
+					<a href="skype:+74952155715?call" class='phone'><i></i>+7 (495) 215-5715</a>
+				</div>
+				<div class="footer__bot clearfix">
+					<p class="copy">© 2015 Easycycle</p>
+					<div class="footer__soc">
+						<a href="#" class='fs'></a>
+						<a target='_blank' href="http://instagram.com/easycycle?ref=badge" class='in'></a>
+						<a href="#" class='tw'></a>
+					</div>
+				</div>
+			</section>
+		</div>
+	</footer>
+	<div class="popup-contact" id="popup-wrap">
+		<h2>Оставьте свои данные,</h2>
+		<p>и мы свяжемся с вами, как только наша студия откроется</p>
+		<div class="wrap-form">
+			<form action="" class='form-popup' method='post' id='btn-submit'>
+				<div class="form-group">
+					<input type="text" id='popup-user-name' name='namepopup' placeholder='Ваше имя'>
+					<input type="email" id='popup-user-email' name='emailpopup' placeholder='Ваш email'>
+					<button type='submit'>Отправить</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<script src='js/main.js'></script>
+	<script>
+	  // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  // (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  // m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  // })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  // ga('create', 'UA-58504748-1', 'auto');
+	  // ga('send', 'pageview');
+	</script>
+</body>
+</html>
